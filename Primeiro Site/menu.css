@@ -42,9 +42,7 @@ table{
     padding-top: 30px;
 }
 
-input.NameBox,
-input.TelBox,
-input.EmailBox,
+input.TextBox,
 select.select{
     width: 40%;
     line-height: 30px;
