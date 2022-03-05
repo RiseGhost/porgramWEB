@@ -62,7 +62,7 @@
             </tr>
         </table>
 
-        <from class="formulario">
+        <form class="formulario">
             <h2>Contacte-nos</h2>
             <h4>Envie-nos a sua dúvida ou sugestão</h4>
             <p></p>
@@ -75,23 +75,19 @@
             <p>Mensagem</p>
             <textarea name="CaixaDeDuvidas" id="CaixaDuvidas" cols="30" rows="10">Indique-nos a sua dúvida</textarea>
             <p>Qual a razão do seu contacto</p>
-            <form>
-                <select name="razao" id="razaoLIST" class="select">
-                    <option value="Informação" selected>👩🏻‍💼Pedido de informação</option>
-                    <option value="Problemas">🛠️Problemas com os nossos serviços</option>
-                    <option value="Reembolso">💵Reembolso</option>
-                </select>
-            </form>
+            <select name="razao" id="razaoLIST" class="select">
+                <option value="Informação" selected>👩🏻‍💼Pedido de informação</option>
+                <option value="Problemas">🛠️Problemas com os nossos serviços</option>
+                <option value="Reembolso">💵Reembolso</option>
+            </select>
             <p>Como prefere ser contactodo:</p>
             <input type="checkbox" name="cktel" id="cktel">📱Telemóvel<br>
             <input type="checkbox" name="ckemal" id="ckemal">📧 Email<br>
-            <form>
-                Data de contacto:
-                <input type="datetime-local" name="DATAcontacto">
-            </form>
+            Data de contacto:
+            <input type="datetime-local" name="DATAcontacto"><br>
             <input type="submit" name="BTNsubmit">
             <input type="reset" name="BTNcancelar" value="Cancelar">
-        </from>
+        </form>
 
         <footer id="Rodape">
             <p>Copyright©2017</p>
