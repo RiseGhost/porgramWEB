@@ -49,14 +49,14 @@ table{
 
 input.NameBox,
 input.TelBox,
-input.EmailBox{
+input.EmailBox,
+select.select{
     width: 40%;
     line-height: 30px;
 }
 
-select.select{
+textarea.Duvida{
     width: 40%;
-    line-height: 30px;
 }
 
 #Rodape{
