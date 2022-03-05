@@ -10,13 +10,14 @@ body{
     text-decoration: none;
 }
 
+table{
+    border: 0;
+    float: left;
+}
+
 .aprender{
     display: flex;
     text-align: justify;
-}
-
-#formulario{
-    background-color: rgb(189, 189, 201);
 }
 
 #CaixaDuvidas{
@@ -26,6 +27,12 @@ body{
 
 #razaoLIST{
     text-align: center;
+}
+
+#formulario{
+    background-color: rgb(189, 189, 201);
+    float: inline-start;
+    width: 100%;
 }
 
 #Rodape{
