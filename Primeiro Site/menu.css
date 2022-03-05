@@ -39,10 +39,24 @@ table{
     text-align: center;
 }
 
-#formulario{
-    background-color: rgb(189, 189, 201);
+.formulario{
+    background-color: whitesmoke;
     float: inline-start;
     width: 100%;
+    padding-left: 100px;
+    padding-top: 30px;
+}
+
+input.NameBox,
+input.TelBox,
+input.EmailBox{
+    width: 40%;
+    line-height: 30px;
+}
+
+select.select{
+    width: 40%;
+    line-height: 30px;
 }
 
 #Rodape{

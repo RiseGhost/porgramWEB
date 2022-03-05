@@ -62,21 +62,21 @@
             </tr>
         </table>
 
-        <from id="formulario">
+        <from class="formulario">
             <h2>Contacte-nos</h2>
             <h4>Envie-nos a sua dúvida ou sugestão</h4>
             <p></p>
             <p>Nome</p>
-            <input type="text" name="Nome">
+            <input type="text" name="Nome" class="NameBox">
             <p>Email</p>
-            <input type="email" name="Email">
+            <input type="email" name="Email" class="EmailBox">
             <p>Telemóvel</p>
-            <input type="tel" name="telemovel">
+            <input type="tel" name="telemovel" class="TelBox">
             <p>Mensagem</p>
             <textarea name="CaixaDeDuvidas" id="CaixaDuvidas" cols="30" rows="10">Indique-nos a sua dúvida</textarea>
             <p>Qual a razão do seu contacto</p>
             <form>
-                <select name="razao" id="razaoLIST">
+                <select name="razao" id="razaoLIST" class="select">
                     <option value="Informação" selected>👩🏻‍💼Pedido de informação</option>
                     <option value="Problemas">🛠️Problemas com os nossos serviços</option>
                     <option value="Reembolso">💵Reembolso</option>
@@ -90,7 +90,7 @@
                 <input type="datetime-local" name="DATAcontacto">
             </form>
             <input type="submit" name="BTNsubmit">
-            <input type="button" name="BTNcancelar" value="Cancelar">
+            <input type="reset" name="BTNcancelar" value="Cancelar">
         </from>
 
         <footer id="Rodape">
