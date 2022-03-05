@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="menu.css">
+    </head>
+    <body>
+        
+        <img src="photos/web.jpg" width="100%">
+
+        <ul id = "menu">
+            <li><h3>Aprender HTML</h3></li>
+            <li><h3>Tutoriais</h3></li>
+            <li><h3>Dicas</h3></li>
+        </ul>
+
+        <table border="0">
+            <tr>
+                <td>
+                    <h2>Aprender HTML</h2>
+                    <div class="aprender">
+                        <img src="photos/web1.jpg">
+                        <p>Desenvolvimento de um página HTML.<br>
+                        Siga as dicas abaixo indicadas para a construção deste website.</p>
+                    </div>
+                </td>
+                <td rowspan="2">
+                    <h2>Tutoriais</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9-QavhHyfkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/y3UH2gAhwPI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 70%">
+                    <h2>Dicas</h2>
+                    <ul>
+                        <li>A imagem do header foi criada em <a href="https://www.canvas.com">https://www.canvas.com</a></li>
+                        <li>Podem obter uma palete de cores através de aplicações online, como por exemplo <a href="https://www.toptal.com/designers/colourcode">https://www.toptal.com/designers/colourcode</a></li>
+                        <li>O Menu deverá ser feito através de uma lista não ordenada. Para ter o aspeto pretendido devem atribuir os seguintes estilos</li>
+                        <ul>
+                            <li>dispal: inline</li>
+                            <li>list-style-type: none</li>
+                            <li>texto-decoration: none</li>
+                        </ul>
+                        <li>Aprender HTML / Dicas e os Tutoriais deverão estar inseridos em uma tabela 2x2. A coluna Dicas deverá ocupar 70% da largura da página. A coluna Tutoriais deve ocupar 2 linhas.</li>
+                        <li>Os Tutoriais são iframes com vídeos do youtube.</li>
+                        <li>O formulário de contacto está inserido num div. Deverá atribuir ao div os seguintes estilos:</li>
+                            <ul>
+                                <li>background-color: whitesmoke</li>
+                                <li>padding-left: 100</li>
+                                <li>padding-top: 30</li>
+                            </ul>
+                        <li>Os inputs do formulário deverão ter uma class associada que tenha a seguinte configuração:</li>
+                            <ul>
+                                <li>width: 40%</li>
+                                <li>line-height: 30px</li>
+                            </ul>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+
+        <div id="formulario">
+            <h2>Contacte-nos</h2>
+            <h4>Envie-nos a sua dúvida ou sugestão</h4>
+            <p></p>
+            <p>Nome</p>
+            <input type="text" name="Nome">
+            <p>Email</p>
+            <input type="email" name="Email">
+            <p>Telemóvel</p>
+            <input type="tel" name="telemovel">
+            <p>Mensagem</p>
+            <textarea name="CaixaDeDuvidas" id="CaixaDuvidas" cols="30" rows="10">Indique-nos a sua dúvida</textarea>
+            <p>Qual a razão do seu contacto</p>
+            <form>
+                <select name="razao" id="razaoLIST">
+                    <option value="Informação" selected>👩🏻‍💼Pedido de informação</option>
+                    <option value="Problemas">🛠️Problemas com os nossos serviços</option>
+                    <option value="Reembolso">💵Reembolso</option>
+                </select>
+            </form>
+            <p>Como prefere ser contactodo:</p>
+            <input type="checkbox" name="cktel" id="cktel">📱Telemóvel<br>
+            <input type="checkbox" name="ckemal" id="ckemal">📧 Email<br>
+            <form>
+                Data de contacto:
+                <input type="date" name="DATAcontacto">
+            </form>
+            <input type="submit" name="BTNsubmit">
+            <input type="button" name="BTNcancelar" value="Cancelar">
+        </div>
+
+        <div id="Rodape">
+            <p>Copyright©2017</p>
+        </div>
+
+    </body>
+</html>
