@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+body{
+    font-size: 12;
+}
+
+.MainTable{
+    width: 40%;
+}
+
+tr{
+    height: 25px;
+    border: solid;
+}
+
+.SmallColumn{
+    width: 4.5%;
+}
+
+.StandColumn{
+    width: 10%;
+}
+
+#TabelaInterna{
+    width: 95%;
+    padding: 4px;
+}
