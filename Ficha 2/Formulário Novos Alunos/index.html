@@ -5,13 +5,32 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
+        <div class = "Cabecalho">
+            <div id="Texto">
+                <h2>Bem-vindo a UBI!!!</h2>
+                <h3>Tá na hora de fazeres o teu cadastro.</h3>
+            </div>
+            <div id="Imagem">
+                <img src="photos/ubi_icon.png" height="150px">
+            </div>
+        </div>
         <form class="formulario">
-            <h2>Bem-vindo a UBI!!!</h2>
-            <h3>Tá na hora de fazeres o teu cadastro.</h3>
             Nome:
             <input type="text" name="Nome" class="TextBox"><br>
-            Indique o seu distrito:
+
+            Curso:
+            <select name="Curso" class="select">
+                <option value="----" selected>----</option>
+                <option value="Marketing">Marketing</option>
+                <option value="Engenharia_Informatica">Engenharia Informática</option>
+                </select>
+
+
+
+
+            Distrito:
             <select name="distrito" class="select">
+                <option value="----" selected>----</option>
                 <option value="Aveiro" selected>Aveiro</option>
                 <option value="Beja">Beja</option>
                 <option value="Braga">Braga</option>
@@ -26,21 +45,23 @@
                 <option value="Portalegre">Portalegre</option>
                 <option value="Porto">Porto</option>
                 <option value="Santarém">Santarém</option>
-                <option value="Setúbel">Setúbel</option>
-                <option value="Viana do Castelo">Castelo</option>
+                <option value="Setúbal">Setúbal</option>
+                <option value="Viana do Castelo">Viana do Castelo</option>
                 <option value="Vila Real">Vila Real</option>
                 <option value="Viseu">Viseu</option>
             </select><br>
+            Genéro ➡️
             <input type="radio" name="genero" value="Masculino">
-            <label for="Masculino" id="LabelMasculino">Masculino</label>
+            <label for="Masculino" id="LabelMasculino">Masculino♂️</label>
             <input type="radio" name="genero" value="Feminino">
-            <label for="Feminino" id="LabelFeminina">Feminino</label><br>
+            <label for="Feminino" id="LabelFeminina">Feminino♀️</label><br>
             Morada:<br>
             <textarea name="Morada" id="TextMorada" cols="30" rows="10"></textarea> <br>
-            Código postal ➡️
+            Código Postal ➡️
             <input type="text" id="postalCode4" placeholder="0000" maxlength="4">
             -
-            <input type="text" id="postalCode3" placeholder="000" maxlength="3">
+            <input type="text" id="postalCode3" placeholder="000" maxlength="3"> <br>
+            Data de Nascimento ➡️ <input type="date" id="DataNascimento">
         </form>
     </body>
 </html>
