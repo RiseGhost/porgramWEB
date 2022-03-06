@@ -6,4 +6,23 @@ body{
 
 .formulario{
     width: 80%;
+    line-height: 35px;
+}
+
+.formulario #LabelMasculino{
+    color: rgb(0, 119, 255);
+}
+
+.formulario #LabelFeminina{
+    color: rgb(219, 125, 140);
+}
+
+.formulario #postalCode4{
+    text-align: center;
+    width: 32px;
+}
+
+.formulario #postalCode3{
+    text-align: center;
+    width: 22px;
 }
