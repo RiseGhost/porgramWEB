@@ -6,18 +6,6 @@ body{
     background-color: #2c6b74;
 }
 
-.formulario{
-    width: 80%;
-    line-height: 35px;
-    background-color: #fef5c8;
-    padding-left: 5%;
-    margin-left: 7%;
-}
-
-.formulario input{
-    border: none;
-}
-
 .Cabecalho{
     display: flex;
     width: 92%;
@@ -29,11 +17,28 @@ body{
 
 .Cabecalho #Texto{
     color: white;
+    font-size: 18px;
 }
 
 .Cabecalho #Imagem{
     position: absolute;
     left: 88%;
+}
+
+.formulario{
+    width: 80%;
+    line-height: 35px;
+    background-color: #fef5c8;
+    padding-left: 5%;
+    margin-left: 7%;
+}
+
+.formulario input{
+    border-left: none;
+    border-right: none;
+    border-top: 3px;
+    background-color: #fef5c8;
+    border-color: #f23e02;
 }
 
 .formulario #LabelMasculino{
@@ -52,4 +57,8 @@ body{
 .formulario #postalCode3{
     text-align: center;
     width: 22px;
+}
+
+.formulario .TextBox{
+    width: 290px;
 }
