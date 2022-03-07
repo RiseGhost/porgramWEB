@@ -41,6 +41,15 @@ body{
     border-color: #f23e02;
 }
 
+.formulario .select{
+    text-align: center;
+    border-left: none;
+    border-right: none;
+    border-top: 3px;
+    background-color: #fef5c8;
+    border-color: #f23e02;
+}
+
 .formulario #LabelMasculino{
     color: rgb(0, 119, 255);
 }
