@@ -20,12 +20,14 @@ body{
     font-size: 18px;
 }
 
-.Cabecalho #Imagem{
+.Cabecalho img{
     position: absolute;
     left: 88%;
+    height: 170px;
 }
 
 .formulario{
+    position: fixed;
     width: 80%;
     line-height: 35px;
     background-color: #fef5c8;
@@ -79,6 +81,7 @@ body{
 }
 
 .Rodape{
+    position: absolute;
     width: 100%;
     height: 190px;
     text-align: left;
@@ -88,4 +91,6 @@ body{
     margin-left: -1%;
     margin-bottom: -1%;
     color: white;
+    
+    top: 820px;
 }
