@@ -26,7 +26,7 @@
 
         <form class="formulario">
             Nome ➡️
-            <input type="text" name="Nome" class="TextBox"><br>
+            <input type="text" name="Nome" class="TextBox" placeholder="Escreva aqui o seu nome"><br>
             Distrito:
             <select name="distrito" class="select">
                 <option value="----" selected>----</option>
@@ -61,7 +61,7 @@
             -
             <input type="text" id="postalCode3" placeholder="000" maxlength="3"> <br>
             Data de Nascimento ➡️ <input type="date" id="DataNascimento"><br>
-            Curso:
+            Curso ➡️
             <select name="Curso" class="select">
                 <option value="----" selected>----</option>
                 <option value="Marketing">Marketing</option>
@@ -85,6 +85,22 @@
                 <option value="Danca">Dança</option>
                 <option value="Design_Moda">Desing de Moda</option>
             </select>
+            &emsp;|  Regime de ingresso ➡️
+            <select name="Ingresso" class="select">
+                <option value="----" selected>----</option>
+                <option value="Geral">Regime Geral</option>
+                <option value="Maiore23">Maiores de 23</option>
+                <option value="CET">Titulares de CET</option>
+                <option value="transferencia">Transferência</option>
+                <option value="Mudanca_de_curso">Mudança de curso</option>
+                <option value="Zero">Ano zero</option>
+                <option value="Livre">Curso Livre</option>
+            </select>
+            &emsp;|  Foi a tua primeira opção ➡️
+            <input type="radio" name="opcao" value="Sim" class="RadioBTN">
+            <label for="RadioBTN" id="LabelSim">Sim</label>
+            <input type="radio" name="opcao" value="Nao" class="RadioBTN">
+            <label for="RadioBTN" id="LabelNao">Não</label><br>
         </form>
         
     </body>
