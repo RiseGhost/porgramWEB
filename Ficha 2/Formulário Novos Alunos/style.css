@@ -29,12 +29,15 @@ body{
 .formulario{
     position: fixed;
     width: 80%;
+    height: 50%;
     line-height: 35px;
     background-color: #fef5c8;
     padding-left: 5%;
     padding-bottom: 35px;
     padding-top: 35px;
     margin-left: 7%;
+    overflow-y: scroll;
+    bottom: 25%;
 }
 
 .formulario input{
