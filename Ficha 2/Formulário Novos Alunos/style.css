@@ -73,3 +73,14 @@ body{
 .formulario .TextBox{
     width: 290px;
 }
+
+.Rodape{
+    width: 100%;
+    height: 190px;
+    text-align: left;
+    background-color: #013750;
+    padding-left: 12%;
+    padding-top: 15px;
+    margin-left: -1%;
+    margin-bottom: -1%;
+}
