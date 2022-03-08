@@ -26,6 +26,7 @@ body{
     height: 170px;
 }
 
+/*Estilização do formulário*/
 .formulario{
     position: fixed;
     width: 80%;
@@ -38,6 +39,7 @@ body{
     margin-left: 7%;
     overflow-y: scroll;
     bottom: 25%;
+    border-radius: 10px;
 }
 
 .formulario input{
@@ -57,14 +59,6 @@ body{
     border-color: #f23e02;
 }
 
-.formulario #LabelMasculino{
-    color: rgb(0, 119, 255);
-}
-
-.formulario #LabelFeminina{
-    color: rgb(219, 125, 140);
-}
-
 .formulario #postalCode4{
     text-align: center;
     width: 32px;
@@ -78,10 +72,50 @@ body{
 .formulario .TextBox{
     width: 290px;
 }
+/*****Fim da estilização dos formulário*****/
 
-.formulario .RadioBTN{
-    accent-color: #2c6b74;
+
+/*Estilo dos RadioButton:*/
+.RadioGenero{
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+.RadioGenero .option{
+    background: #fef5c8;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all 0.3s ease;
+}
+  
+input[type="radio"]{
+    display: none;
+}
+
+#masculino:checked:checked ~ .masculino{
+    border-color: #fef5c8;
+    background: rgb(0, 119, 255);
+}
+  
+#feminino:checked:checked ~ .feminino{
+    border-color: #fef5c8;
+    background: rgb(219, 125, 140);
+}
+.RadioGenero .option span{
+    font-size: 18px;
+    color: black;
+}
+#masculino:checked:checked ~ .masculino span,
+#feminino:checked:checked ~ .feminino span{
+    color: #fff;
+}
+/*******************************************************************/
 
 .Info{
     position: absolute;
