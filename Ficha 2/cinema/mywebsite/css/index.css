@@ -1,0 +1,17 @@
+.Menu ul{
+    display: inline;
+    list-style: none;
+}
+
+.Menu li{
+    float: left;
+}
+
+.Tarifario{
+    border-top-width: 3px;
+    border-top-color: grey;
+    border-top-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: grey;
+    border-bottom-style: solid;
+}
