@@ -76,12 +76,12 @@ body{
 
 
 /*Estilo dos RadioButton:*/
-.RadioGenero{
+.Radio{
     display: inline-flex;
     align-items: center;
     justify-content: space-evenly;
 }
-.RadioGenero .option{
+.Radio .option{
     background: #fef5c8;
     width: 100%;
     display: flex;
@@ -107,12 +107,21 @@ input[type="radio"]{
     border-color: #fef5c8;
     background: rgb(219, 125, 140);
 }
-.RadioGenero .option span{
+
+#sim:checked:checked ~ .sim,
+#nao:checked:checked ~ .nao{
+    border-color: #fef5c8;
+    background: #f23e02;
+}
+
+.Radio .option span{
     font-size: 18px;
     color: black;
 }
 #masculino:checked:checked ~ .masculino span,
-#feminino:checked:checked ~ .feminino span{
+#feminino:checked:checked ~ .feminino span,
+#sim:checked:checked ~ .sim span,
+#nao:checked:checked ~ .nao span{
     color: #fff;
 }
 /*******************************************************************/

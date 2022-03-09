@@ -51,9 +51,9 @@
             </select><br>
             Genéro ➡️
             
-            <div class="RadioGenero">
-                <input type="radio" name="select" id="masculino">
-                <input type="radio" name="select" id="feminino">
+            <div class="Radio">
+                <input type="radio" name="selectGENERO" id="masculino">
+                <input type="radio" name="selectGENERO" id="feminino">
                   <label for="masculino" class="option masculino">
                      <span>Masculino</span>
                      </label>
@@ -105,10 +105,16 @@
                 <option value="Livre">Curso Livre</option>
             </select>
             &emsp;|  Foi a tua primeira opção ➡️
-            <input type="radio" name="opcao" value="Sim" class="RadioBTN">
-            <label for="RadioBTN" id="LabelSim">Sim</label>
-            <input type="radio" name="opcao" value="Nao" class="RadioBTN">
-            <label for="RadioBTN" id="LabelNao">Não</label><br>
+            <div class="Radio">
+                <input type="radio" name="selectSN" id="sim">
+                <input type="radio" name="selectSN" id="nao">
+                  <label for="sim" class="option sim">
+                     <span>Sim</span>
+                     </label>
+                  <label for="nao" class="option nao">
+                     <span>Não</span>
+                  </label>
+            </div><br>
             <input type="reset" name="BTNclean" value="Clique em min para limpar">
             &emsp;
             <input type="submit" name="BTNsubmit" value="Clique em min para submeter">
