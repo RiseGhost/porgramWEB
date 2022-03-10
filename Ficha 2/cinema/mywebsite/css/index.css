@@ -1,3 +1,15 @@
+body{
+    font-family: Calibri;
+}
+
+h1{
+    color: #ff3399;
+}
+
+h4{
+    color: #ff3399;
+}
+
 .Header .Imagem{
     width: 500px;
     height: 100px;
@@ -17,6 +29,7 @@
     border-top-width: 2px;
     border-top-color: grey;
     border-top-style: solid;
+    padding-top: 1%;
 }
 
 .Conteudo .Tabela .Image{
