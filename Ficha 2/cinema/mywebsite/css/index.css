@@ -1,3 +1,8 @@
+.Header .Imagem{
+    width: 500px;
+    height: 100px;
+}
+
 .Menu ul{
     display: inline;
     list-style: none;
@@ -7,11 +12,29 @@
     float: left;
 }
 
-.Tarifario{
-    border-top-width: 3px;
+.Conteudo,
+.Preguntas{
+    border-top-width: 2px;
     border-top-color: grey;
     border-top-style: solid;
-    border-bottom-width: 3px;
-    border-bottom-color: grey;
-    border-bottom-style: solid;
+}
+
+.Conteudo .Tabela .Image{
+    height: 80px;
+    width: 80px;
+}
+
+.Conteudo .Tabela .Linha{
+    display: flex;
+    flex-direction: row;
+}
+
+.Conteudo .Tabela .Linha .Celula{
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.Conteudo .Tabela .Linha .Texto{
+    padding-left: 15px;
 }
