@@ -45,7 +45,7 @@ h4{
 .Conteudo .Tabela .Linha .Celula{
     display: flex;
     align-items: center;
-    padding: 15px;
+    padding: 20px;
 }
 
 .Conteudo .Tabela .Linha .Texto{
