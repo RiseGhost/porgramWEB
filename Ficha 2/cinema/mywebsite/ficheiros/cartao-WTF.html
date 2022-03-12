@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cartão WTF</title>
+        <link rel="stylesheet" href="../css/index.css">
+    </head>
+    <body>
+        <h1>Adesão Cartão WTF</h1>
+        <form class="Cartao">
+            <fieldset>
+                <legend><strong>Dados pessoais</strong></legend>
+                Nome:
+                <input type="text" size="100px"> <br>
+                Sexo:
+                <input type="radio" name="sexo" value="masculino" checked=""> Masculino
+                <input type="radio" name="sexo" value="feminino">Feminino
+                <br>
+                Data de Nascimento:
+                <input type="date"><br>
+                Estado Civil:
+                <select name="Estado_Civil">
+                    <option value="Escolha" disabled="" selected="">Escolha uma opeção</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Solteiro">Solteiro</option>
+                    <option value="Divorciado">Divorciado</option>
+                    <option value="Viuvo">Viúvo</option>
+                </select>&emsp;
+                Número de filhos:
+                <input type="number" name="nr_filhos" min="0" max="5">
+            </fieldset>
+            <fieldset>
+                <legend><strong>Contactos</strong></legend>
+                Còdigo-Postal:
+                <input type="text" placeholder="0000" maxlength="4" required minlength="4" class="Cod-Postal">
+                -
+                <input type="text" placeholder="000" maxlength="3" required minlength="3" class="Cod-Postal">
+                <br>
+                Morada: <br>
+                <textarea name="Morada" cols="106" rows="5"></textarea>
+                <br>
+                Email:
+                <input type="email" name="email" placeholder="exemplo@email.pt">
+                <br>
+                Passeword:
+                <input type="password" name="password">
+            </fieldset>
+            <div class="fim">
+                <small>
+                    <i>Pretendo ser contacdo através de:</i>
+                    <input type="checkbox" name="contactos" value="c_email">Email &nbsp;
+                    <input type="checkbox" name="contactos" value="c_tel"> Telemóvel &nbsp;
+                    <input type="checkbox" name="contactos" value="c_correio"> Correio
+                </small> <br>
+                <input type="reset" value="Limpar">
+                <input type="submit" value="Confirmar">
+            </div>
+        </form>
+    </body>
+</html>
