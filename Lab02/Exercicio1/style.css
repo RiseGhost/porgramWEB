@@ -55,3 +55,10 @@ a:hover{
     background-color: white;
     color: darkturquoise;
 }
+
+.footer p{
+    background-color: black;
+    color: white;
+    height: 90px;
+    bottom: 0;
+}
