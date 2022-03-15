@@ -1,0 +1,57 @@
+body{
+    font-family: Gill Sans,Gill Sans MT,Calibri,sans-serif;
+    font-size: 18px;
+}
+
+.topdiv{
+    background-image: url(https://cdn.pixabay.com/photo/2014/05/03/00/42/vw-camper-336606_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    color: white;
+    font-size: 28px;
+    height: 400px;
+}
+
+.topdiv *{
+    display: flex;
+    padding-left: 50px;
+    align-items: center;
+    align-content: center;
+}
+
+.topdiv h1{
+    padding-top: 90px;
+}
+
+div p{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(196, 236, 236);
+    height: 120px;
+    align-items: center;
+    margin-top: 0;
+}
+
+.divdestination *{
+    text-align: left;
+    
+}
+
+.divdestination{
+    padding: 50px;
+}
+
+a{
+    background-color: darkturquoise;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid darkturquoise;
+}
+
+a:hover{
+    background-color: white;
+    color: darkturquoise;
+}
