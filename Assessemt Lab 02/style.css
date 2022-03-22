@@ -3,7 +3,7 @@ body{
     font-size: 14px;
     color: #222;
     margin: auto;
-    width: 60%;
+    width: 50%;
 }
 
 a{
@@ -30,7 +30,7 @@ article{
     border-color: gray;
 }
 
-article p{
+article > p{
     text-align: justify;
     margin-left: 55%;
 }
@@ -50,16 +50,29 @@ article img{
     float: left;
 }
 
-article img h2{
+article img + h2{
     float: right;
     margin-top: 0;
     width: 45%;
+}
+
+article img ~ p{
+    text-align: justify;
+    margin-left: 55%;
 }
 
 .principal img{
     width: 100%;
 }
 
+.principal h2{
+    font-size: 30px;
+}
+
+.principal > p{
+    font-family: Georgia, serif;
+    font-size: 14px;
+}
 
 .autor {
     color: #444;
@@ -75,5 +88,17 @@ span.especial {
 .contacts strong.instagram,
 a[href="howdy.com"] {
     font-family: Courier;
+    color: #2554C7;
+}
+
+a[href="howdy.com"] {
+    text-decoration: none;
+}
+
+#scandal {
+    background-color: gainsboro;
+}
+
+span.especial {
     color: #2554C7;
 }
