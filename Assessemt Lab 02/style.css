@@ -72,7 +72,10 @@ article img ~ p{
 .principal > p{
     font-family: Georgia, serif;
     font-size: 14px;
+    margin: 0;
+    margin-bottom: 5px;
 }
+
 
 .autor {
     color: #444;
