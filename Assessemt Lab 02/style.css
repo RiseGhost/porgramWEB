@@ -1,0 +1,79 @@
+body{
+    font-family: Times;
+    font-size: 14px;
+    color: #222;
+    margin: auto;
+    width: 60%;
+}
+
+a{
+    color: red;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-family: Arial;
+}
+
+header{
+    background-color: #A60015;
+    color: whitesmoke;
+}
+
+article{
+    text-align: justify;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px;
+    border-color: gray;
+}
+
+article p{
+    text-align: justify;
+    margin-left: 55%;
+}
+
+.label{
+    text-transform: uppercase;
+    padding: 1px 4px 2px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: red;
+    font-style: normal;
+}
+
+article img{
+    width: 50%;
+    margin: 0;
+    float: left;
+}
+
+article img h2{
+    float: right;
+    margin-top: 0;
+    width: 45%;
+}
+
+.principal img{
+    width: 100%;
+}
+
+
+.autor {
+    color: #444;
+    font-size: 11px;
+    font-family: Helvetica;
+    font-style: italic;
+}
+
+span.especial {
+    color: #2554C7;
+}
+
+.contacts strong.instagram,
+a[href="howdy.com"] {
+    font-family: Courier;
+    color: #2554C7;
+}
