@@ -105,8 +105,9 @@ nav li a:hover{
 }
 
 .main{
-    width: 55%;
+    width: 73%;
     text-align: justify;
+    margin-right: 32px;
 }
 
 .main h2{
@@ -115,4 +116,26 @@ nav li a:hover{
 
 .main a{
     color: #C60;
+}
+
+.secondary{
+    width: 20%;
+}
+
+.secondary h2{
+    background-color: #DB905C;
+    padding: 2px;
+    color: #FFF;
+    font-size: 14px;
+}
+
+.secondary p{
+    margin-top: 0.2px;
+    margin-bottom: 0.2px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
