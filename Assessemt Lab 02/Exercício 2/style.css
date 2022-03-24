@@ -51,6 +51,40 @@ nav li a:hover{
 
 .menu{
     display: flex;
+    flex-direction: column;
     padding: 0;
     width: 15%;
+}
+
+.menu .favoritos{
+    width: 100%;
+    padding: 5px;
+    margin-top: 1px;
+    background-color: #F8F8F8;
+    border: 1px;
+    border-color: #C5C5C5;
+    border-style: solid;
+
+}
+
+.menu .favoritos h3{
+    color: #036;
+}
+
+.menu .favoritos p{
+    color: #999;
+}
+
+.menu .grup{
+    width: 100%;
+    padding: 5px;
+    margin-top: 0.5px;
+    background-color: #FFF6CD;
+    border: 1px;
+    border-color: #C60;
+    border-style: dashed;
+}
+
+.menu .grup h3{
+    color: #036;
 }
