@@ -1,7 +1,7 @@
 # O que podes encontrar aqui: ❓
 O objetivo deste mini projeto foi a criação de um projeto inicial utilizando __XML__, __PHP__ e __CSS__. Temos um conjunto de dados de alunos guardados no ficheiro _pauta.xml_ e utilizados os ficheiro _pauta-online.php_ para obter os dados do ficheiro xml e tratar esse mesmo dados. O ficheiro em php é reponsável por mostrar os dados na tela do usuário e também com calcular a médida das notas de cada um dos alunos. Caso a nota desse aluno seja inferior a 10 ele diz que o aluno está reprovado caso contrário ele informa que o aluno está aprovado.
 
-# Como instalar e configurar o PHP no Windows:
+# Como instalar e configurar o PHP no Windows: 🪟
 - Inicialmente temos efetuar o download os arquivos, para tal pode utilizar o seguinte link: https://www.php.net/downloads.php.
 - De seguida vá na pasta raiz do seu PC **( c:\ )** e crie uma pasta php. <p>
 ![1](https://user-images.githubusercontent.com/91985039/160221544-1af67947-a84d-404a-a942-71fef0bb270f.jpg)
