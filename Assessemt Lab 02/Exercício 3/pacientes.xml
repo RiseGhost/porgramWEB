@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hostipal>
+
+    <paciente>
+        <Indentificacao>1</Indentificacao>
+        <Sexo>M</Sexo>
+        <Nome>Paulo António</Nome>
+        <Ano>2001</Ano>
+        <BI>12435679</BI>
+        <Contribuiente>242656890</Contribuiente>
+        <Seguro>ADSE</Seguro>
+    </paciente>
+
+    <paciente>
+        <Indentificacao>2</Indentificacao>
+        <Sexo>M</Sexo>
+        <Nome>José Ricardo</Nome>
+        <Ano>1988</Ano>
+        <BI>12345619</BI>
+        <Contribuiente>182746398</Contribuiente>
+        <Seguro>Multicare</Seguro>
+    </paciente>
+
+    <paciente>
+        <Indentificacao>3</Indentificacao>
+        <Sexo>F</Sexo>
+        <Nome>Maria Rita</Nome>
+        <Ano>1991</Ano>
+        <BI>23516787</BI>
+        <Contribuiente>198787627</Contribuiente>
+        <Seguro>Medicare</Seguro>
+    </paciente>
+
+    <paciente>
+        <Indentificacao>4</Indentificacao>
+        <Sexo>M</Sexo>
+        <Nome>Miguel Antunes</Nome>
+        <Ano>2007</Ano>
+        <BI>29878167</BI>
+        <Contribuiente>298716726</Contribuiente>
+        <Seguro>Multicare</Seguro>
+    </paciente>
+
+    <paciente>
+        <Indentificacao>5</Indentificacao>
+        <Sexo>F</Sexo>
+        <Nome>Daniela Relvão</Nome>
+        <Ano>1976</Ano>
+        <BI>24509878</BI>
+        <Contribuiente>287671656</Contribuiente>
+        <Seguro>ADSE</Seguro>
+    </paciente>
+
+    <paciente>
+        <Indentificacao>6</Indentificacao>
+        <Sexo>F</Sexo>
+        <Nome>Juliana Mendes</Nome>
+        <Ano>2010</Ano>
+        <BI>39817623</BI>
+        <Contribuiente>187676543</Contribuiente>
+        <Seguro>Médis</Seguro>
+    </paciente>
+    
+</hostipal>

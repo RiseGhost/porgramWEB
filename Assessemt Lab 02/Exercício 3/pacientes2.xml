@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hostipal>
+
+    <paciente sexo = "M">
+        <Identificacao>4</Identificacao>
+        <Nome>Miguel Antunes</Nome>
+        <Ano>2007</Ano>
+        <BI>29878167</BI>
+        <Contribuiente>298716726</Contribuiente>
+        <Seguro>Multicare</Seguro>
+        <Medico>Dr. Marcelo Perreira</Medico>
+    </paciente>
+
+    <paciente sexo = "F">
+        <Identificacao>6</Identificacao>
+        <Nome>Juliana</Nome>
+        <Ano>2010</Ano>
+        <BI>39817623</BI>
+        <Contribuiente>187676543</Contribuiente>
+        <Seguro>Médis</Seguro>
+        <Medico>Dra. Josefina Fontes</Medico>
+    </paciente>
+
+</hostipal>
