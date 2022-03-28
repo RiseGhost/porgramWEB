@@ -44,6 +44,11 @@ article > p{
     font-style: normal;
 }
 
+.label.atual{
+    background-color: #A60015;
+    color: white;
+}
+
 article img{
     width: 50%;
     margin: 0;
