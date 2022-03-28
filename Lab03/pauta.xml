@@ -1,37 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Student>
     <titulo>Olá</titulo>
-    <cd id="0">
+    <cd id="A12345">
         <name>Ana Silva</name>
-        <number>A12345</number>
         <Exam1>15</Exam1>
         <Exam2>17</Exam2>
     </cd>
 
-    <cd id="1">
+    <cd id="A54321">
         <name>Mário Fonseca</name>
-        <number>A54321</number>
         <Exam1>11</Exam1>
         <Exam2>7</Exam2>
     </cd>
 
-    <cd id="2">
+    <cd id="A44556">
         <name>António Abreu</name>
-        <number>A44556</number>
         <Exam1>14</Exam1>
         <Exam2>13</Exam2>
     </cd>
 
-    <cd id="3">
+    <cd id="A85734">
         <name>Amélia Lourenço</name>
-        <number>A85734</number>
         <Exam1>14</Exam1>
         <Exam2>13</Exam2>
     </cd>
 
-    <cd id="4">
+    <cd id="A33321">
         <name>Alice Guedes</name>
-        <number>A33321</number>
         <Exam1>9</Exam1>
         <Exam2>6</Exam2>
     </cd>
