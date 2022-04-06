@@ -21,28 +21,29 @@
                     <tbody>
                         <xsl:for-each select="hostipal/paciente">
                             <tr>
-                                <td>
-                                    <xsl:value-of select="Indentificacao" />
-                                </td>
-                                <td>
-                                    <xsl:value-of select="Sexo" />
-                                </td>
-                                <td>
-                                    <xsl:value-of select="Nome" />
-                                </td>
-                                <td>
-                                    <xsl:value-of select="Ano" />
-                                </td>
-                                <td>
-                                    <xsl:value-of select="BI" />
-                                </td>
-                                <td>
-                                    <xsl:value-of select="Contribuinte" />
-                                </td>
-                                <td>
-                                    <xsl:value-of select="Seguro" />
-                                </td>
-                                <br></br>
+                                <xsl:if test="Ano &gt; 2004">
+                                    <td>
+                                        <xsl:value-of select="Indentificacao" />
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="Sexo" />
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="Nome" />
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="Ano" />
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="BI" />
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="Contribuinte" />
+                                    </td>
+                                    <td>
+                                        <xsl:value-of select="Seguro" />
+                                    </td>
+                                </xsl:if>
                             </tr>
                         </xsl:for-each>
                     </tbody>
