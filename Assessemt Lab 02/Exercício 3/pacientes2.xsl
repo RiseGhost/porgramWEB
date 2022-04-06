@@ -19,10 +19,10 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <xsl:for-each select="hostipal/paciente">
+                        <xsl:for-each select="hostipal/paciente">
+                            <tr>
                                 <td>
-                                    <xsl:value-of select="Identificacao" />
+                                    <xsl:value-of select="Indentificacao" />
                                 </td>
                                 <td>
                                     <xsl:value-of select="Sexo" />
@@ -43,8 +43,8 @@
                                     <xsl:value-of select="Seguro" />
                                 </td>
                                 <br></br>
-                            </xsl:for-each>
-                        </tr>
+                            </tr>
+                        </xsl:for-each>
                     </tbody>
                 </table>
             </body>
