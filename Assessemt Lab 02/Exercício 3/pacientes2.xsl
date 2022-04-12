@@ -43,6 +43,11 @@
                                     <td>
                                         <xsl:value-of select="Seguro" />
                                     </td>
+                                    <xsl:if test="Sexo=F">
+                                        <td>
+                                            Dr. Jorge Costa
+                                        </td>
+                                    </xsl:if>
                                 </xsl:if>
                             </tr>
                         </xsl:for-each>
