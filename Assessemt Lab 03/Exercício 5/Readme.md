@@ -4,7 +4,7 @@ Consegui fazer a div se mexer pelo cenário manipulando as suas margins. Para tr
 Todas essa manipulações da div foram efetuadas no ficheiro __game.js__.
 
 ### Como funciona o jogo?: 🎮
-Aparecem no cenário a forma de um quadrado ou circulo, em um lugar aleatório e o objetivo do jogador é clicar lá o mais rápido possivel. O melhor tempo é registado e o tempo atual também é registado. <p>
+Aparece no cenário a forma de um quadrado ou circulo, em um lugar aleatório e o objetivo do jogador é clicar lá o mais rápido possivel. O melhor tempo é registado e o tempo atual também é registado. <p>
 Caso o jogador falhe o clicke na forma, é gerada um nova forma e o tempo é resetado para 0.
 
 ### Algumas imagens do site: 🖼️
