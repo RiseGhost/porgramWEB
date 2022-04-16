@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Javascript - Exercício 5</title>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #divbox {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            display: none;
+        }
+
+        #divgame {
+            width: 800px;
+            height: 500px;
+            border: 2px black solid;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Jogo - Tempo de reação</h1>
+
+    <h2>Record: <span id="recordTime"><span></span></span></h2>
+    <p>Tempo de reação: <span id="reactionTime"><span></span></span></p>
+    <div id="divgame" onclick="makebox()">
+        <div id="divbox" onclick="validate()"></div>
+    </div>
+    <script src="./game.js"> </script>
+</body>
+
+</html>
