@@ -36,8 +36,10 @@ function validate(){
     var timeDifference = (clickedTime - createdTime) / 1000;
     if(timeDifference < reactionTime) {
         reactionTime = timeDifference;
+        document.getElementById("recordTime").innerHTML = reactionTime + " Novo Recorde!";
+    }   else{
+        document.getElementById("recordTime").innerHTML = reactionTime;
     }
     document.getElementById("reactionTime").innerHTML = timeDifference;
-    document.getElementById("recordTime").innerHTML = reactionTime;
     clickedTime = 0;
 }
