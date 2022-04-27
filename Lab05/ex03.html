@@ -6,7 +6,7 @@
 	<title>jQuery Exercise 03</title>
 	<link rel="stylesheet" href="styles/main.css">
 	<link rel="stylesheet" href="styles/ex03.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 	<script src="scripts/ex03.js"></script>
 </head>
 
@@ -106,8 +106,8 @@
 
 		<script>
 			// toggle the visibility of the characters
-			$("#h3").hover(function() {
-				$(this).toggleClass("hidden");
+			$("span").click(function () {
+				$(this).toggle();
 			});
 		</script>
 
