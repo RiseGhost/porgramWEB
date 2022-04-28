@@ -4,7 +4,7 @@ fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=warframe&
         return response.json();
     })
     .then(function (data) {
-         
+        
         
         let videos = data.items;
         let imagem = document.querySelector("#lista");
