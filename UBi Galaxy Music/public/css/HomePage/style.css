@@ -51,3 +51,7 @@ main #tittle{
 main .container{
     position: relative;
 }
+
+main .container .box .box-content{
+    text-align: center;
+}
