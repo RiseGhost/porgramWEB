@@ -1,0 +1,32 @@
+.register_input {
+    margin: 20px;
+    padding: 5px;
+    background-color: #24252e;
+    color: rgb(138, 144, 189);
+}
+
+
+.register_input input{
+    margin: 20px;
+    padding: 5px;
+    background-color: #24252e;
+    color: rgb(138, 144, 189);
+    border: 0px;
+    border-bottom: 1px solid rgb(138, 144, 189);
+}
+
+.register_button button {
+    border: 1px solid rgb(138, 144, 189);
+    background-color: #24252e;
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100px;
+}
+
+.register_button button:hover{
+    background-color: rgb(138, 144, 189);
+    color: #24252e;
+}

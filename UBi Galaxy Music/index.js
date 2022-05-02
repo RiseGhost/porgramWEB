@@ -16,12 +16,20 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 //************************ */
 
+app.post('/', function (req, res) {
+    res.sendFile("./views/index.html", { root: __dirname });
+    User.create({
+        nome: req.body.username,
+        senha: req.body.password
+    })
+})
+
 app.get('/', function (req, res) {
     res.sendFile("./views/index.html", { root: __dirname });
     });
 
 app.get('/conta', function(req, res){
-    res.send("És mesmo gay")
+    res.sendFile("./views/register.html", { root: __dirname });
 })
 
 app.get('/login', function(req,res){
