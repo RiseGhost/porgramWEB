@@ -1,80 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/background/style.css">
-    <link rel="stylesheet" href="/css/froms/login.css">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/Homepage/background.css" />
+    <link rel="stylesheet" href="/css/Homepage/style.css" />
+    <link rel="stylesheet" href="/css/froms/box.css" />
+    <link rel="stylesheet" href="/css/froms/register.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Register</title>
+
 </head>
 
 <body>
-    <div class="bubbles">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-    </div>
-    <div class="login">
-        <img src="/img/b306033ac297f52886eb534cc848b487--wax-lyrical-music-wallpaper.jpg" alt="Logo">
-        <form action="/player" method="POST">
-            <div class="login_title">
-                <h1>UBI Galaxy Music</h1>
-            </div>
-            <div class="login_input">
-                <i class="material-icons">person</i><input type="text" name="username" placeholder="Username"> <br>
-                <i class="material-icons">key</i><input type="password" name="password" placeholder="Password"> <br>
-            </div>
-            <div class="login_button">
-                <button type="submit" onclick="login()">Login</button>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/login">Login</a></li>
+                <li><a href="/conta">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <form action="/player" method="POST" id="formualrio">
+            <div class="container">
+                <div class="box">
+                    <div class="box-content">
+                        <label for="" id="tittle">Login</label>
+                        <div class="register_input">
+                            <i class="material-icons">person</i><input type="text" name="username"
+                                placeholder="Username"> <br>
+                            <i class="material-icons">key</i><input type="password" name="password" id="password"
+                                placeholder="Password"> <br>
+                        </div>
+                        <div class="register_button">
+                           <input type="submit" value="Login" id="register" value="Register"></input>
+                        </div>
+                    </div>
+                </div>
             </div>
         </form>
-    </div>
+    </main>
 
 </body>
 

@@ -16,6 +16,9 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 //************************ */
 
+//Routes:
+
+//User Create:
 app.post('/', function (req, res) {
     res.sendFile("./views/index.html", { root: __dirname });
     User.create({
@@ -24,29 +27,34 @@ app.post('/', function (req, res) {
     })
 })
 
+//Home Page:
 app.get('/', function (req, res) {
     res.sendFile("./views/index.html", { root: __dirname });
     });
 
+//Register Page:
 app.get('/conta', function(req, res){
     res.sendFile("./views/register.html", { root: __dirname });
 })
 
+//Login Page:
 app.get('/login', function(req,res){
     res.sendFile("./views/login.html", {root: __dirname})
 })
 
+//Music Player:
 app.post('/player', function(req,res){
     User.findAll().then((function(users){
-        var name = users[0].dataValues.nome
-        var password = users[0].dataValues.senha
-        if(req.body.username == name && req.body.password == password){
-            console.log("Logado")
-            res.send("Logado com sucesso")
-        } else {
-            console.log("Erro")
-            res.send("Erro")
+        for(var i = 0; i < users.length; i++){
+            if(users[i].nome == req.body.username && users[i].senha == req.body.password){
+                console.log("Usuario logado com sucesso!");
+                res.sendFile("./views/index.html", {root: __dirname})
+                return true;
+            }
         }
+        console.log("Usuario não encontrado!");
+        res.sendFile("./views/login.html", {root: __dirname})
+        return false;
     }))
 })
 

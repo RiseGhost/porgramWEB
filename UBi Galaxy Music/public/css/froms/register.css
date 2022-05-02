@@ -15,7 +15,7 @@
     border-bottom: 1px solid rgb(138, 144, 189);
 }
 
-.register_button button {
+.register_button input {
     border: 1px solid rgb(138, 144, 189);
     background-color: #24252e;
     color: white;
@@ -26,7 +26,7 @@
     width: 100px;
 }
 
-.register_button button:hover{
+.register_button input:hover{
     background-color: rgb(138, 144, 189);
     color: #24252e;
 }
