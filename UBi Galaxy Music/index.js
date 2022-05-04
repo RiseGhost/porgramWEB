@@ -20,10 +20,21 @@ app.use(bodyParser.json())
 
 //User Create:
 app.post('/', function (req, res) {
-    res.sendFile("./views/index.html", { root: __dirname });
-    User.create({
-        nome: req.body.username,
-        senha: req.body.password
+    User.findAll({
+        where: {
+            nome: req.body.username,
+        }
+    }).then(function (user) {
+        if (user.length > 0) {
+            res.redirect('/contaErro');
+        } else {
+            console.log("User created successfully");
+            User.create({
+                nome: req.body.username,
+                senha: req.body.password
+            })
+            res.sendFile("./views/index.html", { root: __dirname });
+        }
     })
 })
 
@@ -35,6 +46,11 @@ app.get('/', function (req, res) {
 //Register Page:
 app.get('/conta', function(req, res){
     res.sendFile("./views/register.html", { root: __dirname });
+})
+
+//Register Error Page:
+app.get('/contaErro', function(req, res){
+    res.sendFile("./views/registerErro.html", { root: __dirname });
 })
 
 //Login Page:

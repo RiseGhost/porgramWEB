@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="search">
+            <input type="text" id="pesquisa" placeholder="Search Here">
+            <button>Search</button>
+        </div>
+    </header>
+
+    <main>
+        <nav>
+
+        </nav>
+
+        <div class="music-container">
+            <div class="music-player">
+                <iframe width="560" height="315" id="video1" src="https://www.youtube.com/embed/1Z6CHioIn3s"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <a href="#" id="playvideo">Play button</a>
+                <script>
+                    var video1 = document.getElementById('video1');
+                    var playvideo = document.getElementById('playvideo');
+                    playvideo.addEventListener('click', function () {
+                        video1.play();
+                    });
+                </script>
+            </div>
+        </div>
+
+    </main>
+</body>
+
+</html>
