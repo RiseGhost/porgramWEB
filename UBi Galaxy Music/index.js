@@ -6,11 +6,6 @@ const User = require('./modles/Users');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
-/*
-app.set('view engine', 'ejs');
-app.use(express.static(path.join(__dirname, "public")));
-*/
-
 //Body-Parser:
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
@@ -20,12 +15,13 @@ app.use(bodyParser.json())
 
 //User Create:
 app.post('/', function (req, res) {
-    User.findAll({
+    User.findAll({ //Search for all users in the database
         where: {
             nome: req.body.username,
         }
-    }).then(function (user) {
+    }).then(function (user) { //If the user is found, go to an erro page
         if (user.length > 0) {
+            console.log("User already exists");
             res.redirect('/contaErro');
         } else {
             console.log("User created successfully");
@@ -75,5 +71,5 @@ app.post('/player', function(req,res){
 })
 
 app.listen(8081, function(){
-    console.log('listening on port 8081');
+    console.log('Server listening on port 8081');
 })
