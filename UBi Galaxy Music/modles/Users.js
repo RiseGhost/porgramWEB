@@ -9,6 +9,7 @@ const User = bd.sequelize.define('user', {
     }
 })
 
+//Forçar a criação da tabela no banco de dados
 //User.sync({force: true})
 
 module.exports = User

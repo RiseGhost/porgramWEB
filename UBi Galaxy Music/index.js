@@ -3,6 +3,7 @@ const app = express();
 const bodyParser = require('body-parser');
 const path = require('path');
 const User = require('./modles/Users');
+const { Script } = require('vm');
 
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -37,7 +38,7 @@ app.post('/', function (req, res) {
 //Home Page:
 app.get('/', function (req, res) {
     res.sendFile("./views/index.html", { root: __dirname });
-    });
+});
 
 //Register Page:
 app.get('/conta', function(req, res){
