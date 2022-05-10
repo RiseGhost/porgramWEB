@@ -24,16 +24,17 @@
 
         <div class="music-container">
             <div class="music-player">
-                <iframe width="560" height="315" id="video1" src="https://www.youtube.com/embed/1Z6CHioIn3s"
+                <iframe width="560" height="315" id="video1" src="https://www.youtube.com/embed/1Z6CHioIn3s?autoplay=1&mute=1"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <a href="#" id="playvideo">Play button</a>
+                <button id="playvideo">Play button</button>
                 <script>
-                    var video1 = document.getElementById('video1');
+                    document.getElementById("video1").click();
                     var playvideo = document.getElementById('playvideo');
-                    playvideo.addEventListener('click', function () {
-                        video1.play();
+                    video1.click();
+                    playvideo.addEventListener('click', function() {
+                        video1.click();
                     });
                 </script>
             </div>

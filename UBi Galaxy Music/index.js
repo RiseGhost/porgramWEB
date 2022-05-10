@@ -12,6 +12,8 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 //************************ */
 
+//sequalize / express / body-parser / path /mysql2
+
 //Routes:
 
 //User Create:
