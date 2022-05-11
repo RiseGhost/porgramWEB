@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -24,18 +25,20 @@
 
         <div class="music-container">
             <div class="music-player">
-                <iframe width="560" height="315" id="video1" src="https://www.youtube.com/embed/1Z6CHioIn3s?autoplay=1&mute=1"
-                    title="YouTube video player" frameborder="0"
+                <iframe id="video1" width="560" height="315" src="https://www.youtube.com/embed/fB8TyLTD7EE"
+                    title="YouTube video player" frameborder="0" onclick="hello()"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <button id="playvideo">Play button</button>
+                <button id="playvideo" onclick="click()">Play button</button>
                 <script>
-                    document.getElementById("video1").click();
-                    var playvideo = document.getElementById('playvideo');
-                    video1.click();
-                    playvideo.addEventListener('click', function() {
-                        video1.click();
-                    });
+                    function click(){
+                        document.elementFromPoint(window.screen.width/2, window.screen.height/2).click();
+                        console.log(window.screen.width/2, window.screen.height/2);
+                        console.log('clicou');
+                    }
+                    function hello() {
+                        console.log('puta');
+                    }
                 </script>
             </div>
         </div>
