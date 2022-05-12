@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
   width: 1000px;
-  height: 600px;
+  height: 500px;
 }
 
 .box {
@@ -64,7 +64,7 @@
 
   50% {
     width: 60px;
-    height: 600px;
+    height: 500px;
     background: #24252e;
     box-shadow: 10px 10px 10px rgb(138, 144, 189),
       10px 10px 10px rgb(138, 144, 189),
@@ -74,7 +74,7 @@
 
   100% {
     width: 480px;
-    height: 600px;
+    height: 500px;
     background: #24252e;
     box-shadow: 40px 40px 40px rgb(138, 144, 189),
       0 0 0 rgb(138, 144, 189),
