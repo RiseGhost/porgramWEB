@@ -6,15 +6,16 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/player/style.css">
+    <link rel="stylesheet" href="/css/player/list.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 </head>
 
 <body>
     <header>
-        <div class="search">
+        <form class="search" action="/player/search" method="GET">
             <input type="text" name="music" id="pesquisa" placeholder="Search Here">
-            <a href="/sea%r4556ch">Search</a>
-        </div>
+            <button type="submit">Search</button>
+        </form>
     </header>
 
     <main>

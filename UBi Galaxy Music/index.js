@@ -94,7 +94,6 @@ app.post('/player/play', function (req, res) {
 })
 
 app.get('/player/search', function(req,res){
-    console.log(req.body.music);
     var name = req.body.music;
     res.sendFile(__dirname + "/views/list.html", name);
 })
