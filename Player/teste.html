@@ -29,20 +29,10 @@
                     title="YouTube video player" frameborder="0" onclick="hello()"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-                <button id="playvideo" onclick="click()">Play button</button>
-                <script>
-                    function click(){
-                        document.elementFromPoint(window.screen.width/2, window.screen.height/2).click();
-                        console.log(window.screen.width/2, window.screen.height/2);
-                        console.log('clicou');
-                    }
-                    function hello() {
-                        console.log('puta');
-                    }
-                </script>
+                <button id="playvideo" onclick="download()">Play button</button>
             </div>
         </div>
-
+        <script src="./down.js"></script>
     </main>
 </body>
 
