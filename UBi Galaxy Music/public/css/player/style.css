@@ -33,6 +33,10 @@ body{
 }
 
 .search button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
     background-color: rgb(138, 144, 189);
     color: #36373f;
     width: 95px;

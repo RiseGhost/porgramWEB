@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/player/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <form class="search" action="/player/search" method="GET" id="formualrio">
+            <input type="text" name="music" id="pesquisa" placeholder="Search Here">
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <main>
+
+        <form class="music-container" action="/player/play" method="POST" id="formualrio">
+            <div class="music-player">
+                <button id="playvideo" type="submit">Play button</button>
+            </div>
+        </form>
+    </main>
+</body>
+
+</html>
