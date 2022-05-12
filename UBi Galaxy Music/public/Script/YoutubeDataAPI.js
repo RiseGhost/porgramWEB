@@ -1,17 +1,13 @@
 let FURL = window.location.search
 let music = ""
 
-for (let i = 0; i < FURL.length; i++) {
-    if (i > 6) {
-        if (FURL[i] == "+") {
-            music += " "
-        } else {
-            music += FURL[i]
-        }
+for (let i = 7; i < FURL.length; i++) {
+    if (FURL[i] == "+") {
+        music += " "
+    } else {
+        music += FURL[i]
     }
 }
-
-
 
 document.getElementById("pesquisa").value = music;
 console.log(music)
@@ -23,7 +19,7 @@ fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${music}&
         let videos = data.items;
         console.log(videos);
         let list = document.getElementById("list");
-        for(let i = 1; i < videos.length; i++){
+        for (let i = 1; i < videos.length; i++) {
 
             let br = document.createElement("br");
 
@@ -40,10 +36,9 @@ fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${music}&
             div.appendChild(br);
             list.appendChild(div);
 
-            
+
             list.appendChild(label);
             list.appendChild(img);
             list.appendChild(br);
         }
     })
-
