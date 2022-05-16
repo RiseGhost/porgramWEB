@@ -1,19 +1,26 @@
+#fundo{
+    background-color: #1b2735;
+    height: 100vh;
+}
+
 main{
     margin-top: 55px;
-    background-color: #36373f;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    background-color: #1b2735;
+    height: 90vh;
     width: 100%;
     color: rgb(138, 144, 189);
+    overflow: scroll;
 }
 
 #list{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
     gap: 10px;
     width: 100%;
+    padding-top: 30px;
 }
 
 #list img{
@@ -22,7 +29,16 @@ main{
 }
 
 #list .item{
+    display: flex;
+    align-items: center;
+    gap: 25px;
     padding: 10px;
-    border-bottom: 1px solid rgb(138, 144, 189);
     font-size: 22px;
+    width: 730px;
+    font-size: 30px;
+}
+
+#list .item:hover{
+    background-color: rgb(140, 85, 152);
+    color: white;
 }

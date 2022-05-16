@@ -6,22 +6,27 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/player/style.css">
+    <link rel="stylesheet" href="/css/Homepage/background.css" />
     <link rel="stylesheet" href="/css/player/list.css">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
 </head>
 
 <body>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
     <header>
-        <form class="search" action="/player/search" method="GET">
+        <form class="search" action="/player/play" method="GET">
             <input type="text" name="music" id="pesquisa" placeholder="Search Here">
-            <button type="submit">Search</button>
+            <button type="submit">Search🔍</button>
         </form>
     </header>
 
-    <main>
-        <div id="list"></div>
-    </main>
+    <div id="fundo">
+        <main>
+            <div id="list"></div>
+        </main>
+    </div>
+    <script src="/Script/YoutubeDataAPI.js"></script>
 </body>
-<script src="/Script/YoutubeDataAPI.js"></script>
 
 </html>
