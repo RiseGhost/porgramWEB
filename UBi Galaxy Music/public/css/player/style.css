@@ -132,6 +132,12 @@ main .music-container .music-player {
     width: 50px;
 }
 
+#PlayPauseButton:hover i,
+#BeforeButton:hover i,
+#AfterButton:hover i{
+    color: white;
+}
+
 @media screen and (max-width: 1000px) {
     .Radio {
         width: 100%;
