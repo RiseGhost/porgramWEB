@@ -50,6 +50,12 @@ main {
     font-weight: bold;
 }
 
+.search button:hover {
+    background-color: rgb(140, 85, 152);
+    cursor: pointer;
+    color: white;
+}
+
 main {
     display: flex;
 }
@@ -57,7 +63,7 @@ main {
 main nav {
     width: 200px;
     height: 100vh;
-    background-color: #36373f;
+    background-color: #1b2735;
     border-right: 2px solid rgb(138, 144, 189);
 }
 
@@ -66,7 +72,7 @@ main .music-container {
     flex-direction: column;
     width: 100%;
     height: 100vh;
-    background-color: #36373f;
+    background-color: #1b2735;
     justify-content: center;
     align-items: center;
 }
@@ -76,6 +82,7 @@ main .music-container {
 main .music-container .music-player {
     display: flex;
     flex-direction: column;
+    position: absolute;
     width: 790px;
     height: 500px;
     background-color: rgb(138, 144, 189);

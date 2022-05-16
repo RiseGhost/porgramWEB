@@ -6,10 +6,14 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/player/style.css">
+    <link rel="stylesheet" href="/css/Homepage/background.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
     <header>
         <form class="search" action="/player/search" method="GET" id="formualrio">
             <input type="text" name="music" id="pesquisa" placeholder="Search Here">
@@ -18,7 +22,6 @@
     </header>
 
     <main>
-
         <div class="music-container" action="/player/play" method="POST" id="formualrio">
             <form class="music-player">
                 <button id="playvideo" type="submit">Play button</button>
