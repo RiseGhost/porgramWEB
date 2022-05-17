@@ -77,6 +77,7 @@ app.post('/player/play', function (req, res) {
     var YoutubeMp3Downloader = require("youtube-mp3-downloader");
 
     //Configure YoutubeMp3Downloader with your settings
+    /*var this = self*/
     var YD = new YoutubeMp3Downloader({
         "ffmpegPath": "C:\\Users\\jomig\\FFmpeg\\bin\\ffmpeg.exe",        // FFmpeg binary location
         "outputPath": "C:/Users/jomig/porgramWEB/UBi Galaxy Music/music",         // Output file location (default: the home directory)
@@ -89,9 +90,10 @@ app.post('/player/play', function (req, res) {
     console.log("Music Downloading...");
 
     //Download video and save as MP3 file
-    //YD.download("D9G1VOjN_84");
-    console.log(req.body.videoid);
-    res.sendFile("./views/player.html", { root: __dirname })
+    YD.download(req.body.videoid);   
+    console.log("ID do video -> " + req.body.videoid);
+    console.log("Music Downloaded!");
+    res.sendFile("./views/player.html", { root: __dirname });
 })
 
 app.get('/player/search', function(req,res){

@@ -31,7 +31,8 @@ fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&q=${music}&
             div.method = "POST"
             let label = document.createElement("Label");
             label.innerHTML = videos[i].snippet.title;
-            let textid = document.createElement("Label");
+            let textid = document.createElement("input");
+            textid.type = "text";
             textid.name = "videoid";
             textid.id = "videoid";
             textid.value = videos[i].id.videoId;
