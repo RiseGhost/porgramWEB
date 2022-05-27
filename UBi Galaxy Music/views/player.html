@@ -62,9 +62,11 @@
             document.getElementById("Titulo").innerHTML += string[i];
         }
     }
-    document.getElementById("audio").src = "C:/Users/jomig/porgramWEB/UBi Galaxy Music/music/" + document.getElementById("Titule").innerText + ".mp3"
-    console.log(document.getElementById("audio").src)
     }
+    let Imgsrc = document.cookie.toString()
+    Imgsrc = Imgsrc.substring(Imgsrc.search("videoImg") + 12, Imgsrc.search("videoTittle"))
+    console.log(document.cookie.toString())
+    //document.getElementsByClassName("music-container").style = "background-image: url(" + imgsrc + ")"
     function Play(){
         document.getElementById("audio").play();
     }

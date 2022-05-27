@@ -40,6 +40,12 @@ fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=
             textid.type = "text";
             textid.name = "videoid";
             textid.id = "videoid";
+            let textImg = document.createElement("input");
+            textImg.type = "text";
+            textImg.name = "videoImg";
+            textImg.id = "videoImg";
+            textImg.value = videos[i].snippet.thumbnails.default.url;
+            textImg.style.display = "none";
             textid.value = videos[i].id.videoId;
             textid.innerHTML = videos[i].id.videoId;
             textid.innerText = videos[i].id.videoId;
