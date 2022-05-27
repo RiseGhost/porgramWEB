@@ -24,7 +24,9 @@
     <main>
         <div class="music-container">
             <form class="music-player" action="/player/play" method="POST" id="formualrio">
-                <button id="playvideo" type="submit">Play button</button>
+                <label id="Titulo">dsada</label>
+                <button id="playvideo" type="submit" onclick="Play()">Play button</button>
+                <audio src="" id="audio"></audio>
             </form>
             <div class="Radio">
                 <div id="info">
@@ -46,4 +48,25 @@
 </body>
 
 <script src="/Script/RadioWorldAPI.js"></script>
+<script>
+    let string = document.cookie.toString()
+    string = string.replace('%2C', ',')
+    console.log(string.search("videoTittle"));
+    console.log(string);
+    document.getElementById("Titulo").innerHTML = ""
+    if(string.search("videoTittle") != -1){
+        for (let i = string.search("videoTittle") + 12; i < string.length; i++) {
+        if(string[i] == "-"){
+            document.getElementById("Titulo").innerHTML += " ";
+        }   else{
+            document.getElementById("Titulo").innerHTML += string[i];
+        }
+    }
+    document.getElementById("audio").src = "C:/Users/jomig/porgramWEB/UBi Galaxy Music/music/" + document.getElementById("Titule").innerText + ".mp3"
+    console.log(document.getElementById("audio").src)
+    }
+    function Play(){
+        document.getElementById("audio").play();
+    }
+</script>
 </html>

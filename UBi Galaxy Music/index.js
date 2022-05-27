@@ -63,6 +63,7 @@ app.post('/player', function (req, res) {
         for (var i = 0; i < users.length; i++) {
             if (users[i].nome == req.body.username && users[i].senha == req.body.password) {
                 console.log("Usuario logado com sucesso!");
+                res.clearCookie('videoTittle')
                 res.sendFile("./views/player.html", { root: __dirname })
                 return true;
             }
@@ -93,6 +94,10 @@ app.post('/player/play', function (req, res) {
     YD.download(req.body.videoid);   
     console.log("ID do video -> " + req.body.videoid);
     console.log("Music Downloaded!");
+    var TittleSemEspaco = req.body.videoTitle.replace(/ /g, "-");
+    console.log("Titulo do video -> " + TittleSemEspaco);
+    res.clearCookie('videoTittle')
+    res.cookie('videoTittle', TittleSemEspaco );
     res.sendFile("./views/player.html", { root: __dirname });
 })
 
