@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/player/style.css">
-    <link rel="stylesheet" href="/css/Homepage/background.css" />
+    <link rel="stylesheet" href="/css/HomePage/background.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
@@ -24,9 +24,7 @@
     <main>
         <div class="music-container">
             <form class="music-player" action="/player/play" method="POST" id="formualrio">
-                <label id="Titulo">dsada</label>
-                <button id="playvideo" type="submit" onclick="Play()">Play button</button>
-                <audio src="" id="audio"></audio>
+                <button id="playvideo" type="submit">Play button</button>
             </form>
             <div class="Radio">
                 <div id="info">
@@ -48,27 +46,4 @@
 </body>
 
 <script src="/Script/RadioWorldAPI.js"></script>
-<script>
-    let string = document.cookie.toString()
-    string = string.replace('%2C', ',')
-    console.log(string.search("videoTittle"));
-    console.log(string);
-    document.getElementById("Titulo").innerHTML = ""
-    if(string.search("videoTittle") != -1){
-        for (let i = string.search("videoTittle") + 12; i < string.length; i++) {
-        if(string[i] == "-"){
-            document.getElementById("Titulo").innerHTML += " ";
-        }   else{
-            document.getElementById("Titulo").innerHTML += string[i];
-        }
-    }
-    }
-    let Imgsrc = document.cookie.toString()
-    Imgsrc = Imgsrc.substring(Imgsrc.search("videoImg") + 12, Imgsrc.search("videoTittle"))
-    console.log(document.cookie.toString())
-    //document.getElementsByClassName("music-container").style = "background-image: url(" + imgsrc + ")"
-    function Play(){
-        document.getElementById("audio").play();
-    }
-</script>
 </html>
