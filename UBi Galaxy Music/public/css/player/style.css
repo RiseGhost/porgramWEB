@@ -85,7 +85,7 @@ main .music-container .music-player {
     flex-direction: column;    
     position: absolute;
     width: 790px;
-    height: 500px;
+    height: 445px;
     background-color: rgb(138, 144, 189);
     justify-content: center;
     align-items: center;
@@ -94,11 +94,11 @@ main .music-container .music-player {
 }
 
 main .music-container .music-player label {
-    margin-bottom: 385px;
+    margin-bottom: 325px;
     font-size: 24px;
     border: 1px solid rgb(138, 144, 189);
     background-color: #1b2735;
-    padding: 25px;
+    padding: 22px;
     border-radius: 45px;
 }
 

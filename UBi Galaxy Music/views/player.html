@@ -25,7 +25,8 @@
         <div class="music-container">
             <form class="music-player" id="music-player" action="/player/play" method="POST" id="formualrio">
                 <label id="Titlle"></label>
-                <button id="playvideo" type="submit">Play button</button>
+                <button id="playvideo" onclick="Play()">Play button</button>
+                <audio src="./1.mp3" id="audio"></audio>
             </form>
             <div class="Radio">
                 <div id="info">
@@ -58,6 +59,10 @@
         }   else{
             document.getElementById("Titlle").innerHTML += document.cookie[i]
         }
+    }
+
+    function Play(){
+        document.getElementsByTagName("audio")[0].play()
     }
 </script>
 </html>
