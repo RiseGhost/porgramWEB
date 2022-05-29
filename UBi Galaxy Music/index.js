@@ -97,6 +97,9 @@ app.post('/player/play', function (req, res) {
     var TittleSemEspaco = req.body.videoTitle.replace(/ /g, "-");
     console.log("Titulo do video -> " + TittleSemEspaco);
     res.clearCookie('videoTittle')
+    res.clearCookie('videoImg')
+    res.cookie('videoImg', req.body.videoImg);
+    console.log(req.body.videoImg);
     res.cookie('videoTittle', TittleSemEspaco );
     res.sendFile("./views/player.html", { root: __dirname });
 })

@@ -102,6 +102,11 @@ main .music-container .music-player label {
     border-radius: 45px;
 }
 
+main .music-container .music-player {
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .Radio {
     display: flex;
     flex-direction: column;

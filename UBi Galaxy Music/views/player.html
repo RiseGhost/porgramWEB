@@ -23,7 +23,8 @@
 
     <main>
         <div class="music-container">
-            <form class="music-player" action="/player/play" method="POST" id="formualrio">
+            <form class="music-player" id="music-player" action="/player/play" method="POST" id="formualrio">
+                <label id="Titlle"></label>
                 <button id="playvideo" type="submit">Play button</button>
             </form>
             <div class="Radio">
@@ -46,4 +47,17 @@
 </body>
 
 <script src="/Script/RadioWorldAPI.js"></script>
+<script>
+    console.log(document.cookie)
+    console.log(document.cookie.substring(9, document.cookie.search(";")).replace("%2F", "/").replace("%3A", ":").replace("%2F", "/").replace("%2F", "/").replace("%2F", "/").replace("%2F", "/").replace("%2F", "/"))
+    document.getElementById("music-player").style.backgroundImage = "url(" + document.cookie.substring(9, document.cookie.search(";")).replace("%2F", "/").replace("%3A", ":").replace("%2F", "/").replace("%2F", "/").replace("%2F", "/").replace("%2F", "/").replace("%2F", "/") +")"
+    document.getElementById("Titlle").innerHTML = ""
+    for (let i = 12 + document.cookie.search("videoTittle"); i < document.cookie.length; i++) {
+        if(document.cookie[i] == "-"){
+            document.getElementById("Titlle").innerHTML += " "
+        }   else{
+            document.getElementById("Titlle").innerHTML += document.cookie[i]
+        }
+    }
+</script>
 </html>

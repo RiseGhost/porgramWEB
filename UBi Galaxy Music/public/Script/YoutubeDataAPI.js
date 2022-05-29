@@ -44,7 +44,7 @@ fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=
             textImg.type = "text";
             textImg.name = "videoImg";
             textImg.id = "videoImg";
-            textImg.value = videos[i].snippet.thumbnails.default.url;
+            textImg.value = videos[i].snippet.thumbnails.high.url;
             textImg.style.display = "none";
             textid.value = videos[i].id.videoId;
             textid.innerHTML = videos[i].id.videoId;
@@ -60,6 +60,7 @@ fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=
             div.appendChild(img);
             div.appendChild(label);
             div.appendChild(textid);
+            div.appendChild(textImg);
             div.appendChild(br);
             div.appendChild(videoTittle);
 
