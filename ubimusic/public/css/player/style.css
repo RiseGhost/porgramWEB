@@ -1,0 +1,255 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: none;
+    overflow-y: hidden;
+}
+
+main {
+    height: 100vh;
+}
+
+.search {
+    position: absolute;
+    background-color: #24252e;
+    width: 100%;
+    height: 50px;
+    top: 0;
+    left: 0;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+    justify-content: center;
+    gap: 30px;
+    z-index: 999;
+}
+
+#pesquisa {
+    background-color: #36373f;
+    text-decoration: none;
+    color: rgb(138, 144, 189);
+    font-size: 20px;
+    font-weight: bold;
+    height: 100%;
+    width: 75%;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.search button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background-color: rgb(138, 144, 189);
+    color: #36373f;
+    width: 95px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.search button:hover {
+    background-color: rgb(140, 85, 152);
+    cursor: pointer;
+    color: white;
+}
+
+main {
+    display: flex;
+}
+
+main nav {
+    width: 200px;
+    height: 100vh;
+    background-color: #1b2735;
+    border-right: 2px solid rgb(138, 144, 189);
+}
+
+main .music-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-color: #1b2735;
+    justify-content: center;
+    align-items: center;
+
+}
+
+main .music-container .music-player {
+    display: flex;
+    flex-direction: column;    
+    position: absolute;
+    width: 768px;
+    height: 430px;
+    background-color: rgb(138, 144, 189);
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 25px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -75px;
+
+    animation: size 1.5s linear infinite;
+    animation-play-state: paused;
+}
+
+main .music-container .music-player #controls{
+    margin-top: 25px;
+    width: 100%;
+    margin-top: 340px;
+}
+
+main .music-container .music-player .btn-group{
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    margin-top: 3px;
+    padding-left: 10px;
+    width: 99%;
+    height: 65px;
+    background-color: rgba(27, 39, 53, 0.7);
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    gap: 25px;
+}
+
+main .music-container .music-player progress{
+    padding: 0px;
+    margin-bottom: -8px;
+    width: 100%;
+    cursor: pointer;
+}
+
+main .music-container .music-player #lista-playlist form{
+    width: 100%;
+    background-color: green;
+    text-align: center;
+}
+
+main .music-container .music-player #Tittle {
+    position: absolute;
+    margin-bottom: 370px;
+    font-size: 20px;
+    border: 1px solid rgb(138, 144, 189);
+    background-color: rgba(27, 39, 53, 0.6);
+    padding: 16px;
+    border-radius: 45px;
+    text-align: center;
+}
+
+.Radio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    height: 95px;
+    width: 210px;
+    background-color: rgb(138, 144, 189);
+    border-radius: 5px;
+}
+
+.Radio img {
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+
+    animation: rotate 3s linear infinite;
+    animation-play-state: paused;
+}
+
+.Radio #info {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#PlayPauseButton,
+#BeforeButton,
+#AfterButton,
+#play,
+#download,
+#volume {
+    background-color: #36373f;
+    border: none;
+    border-radius: 30px;
+    color: rgb(138, 144, 189);
+    width: 50px;
+}
+
+#download {
+    margin-left: 500px;
+}
+
+#PlayPauseButton:hover i,
+#BeforeButton:hover i,
+#AfterButton:hover i,
+#play:hover i,
+#download:hover i,
+#volume:hover i {
+    color: white;
+}
+
+#VolumeBar{
+    width: 190px;
+}
+
+input[type=range] {
+    height: 13px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px #000000;
+    background: #AC51B5;
+  }
+
+@media screen and (max-width: 1000px) {
+    .Radio {
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .Radio #controlls {
+        text-align: center;
+        width: 100%;
+    }
+
+    .Radio #controlls button i {
+        font-size: 35px;
+    }
+
+    #PlayPauseButton,
+    #BeforeButton,
+    #AfterButton,
+    #play {
+        width: 75px;
+    }
+}
+
+@keyframes rotate {
+    form {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes size {
+    0% {box-shadow: 0px 0px 0px rgb(138, 144, 189, 0.6);}
+    10% {box-shadow: 1px 1px 2px rgb(138, 144, 189, 0.6), -1px -1px 2px rgb(138, 144, 189, 0.6);}
+    20% {box-shadow: 2px 2px 4px rgb(138, 144, 189, 0.6), -2px -2px 4px rgb(138, 144, 189, 0.6);}
+    25% {box-shadow: 3px 3px 6px rgb(138, 144, 189, 0.6), -3px -3px 6px rgb(138, 144, 189, 0.6);}
+    50% {box-shadow: 6px 6px 12px rgb(138, 144, 189, 0.6), -6px -6px 12px rgb(138, 144, 189, 0.6);}
+    75% {box-shadow: 3px 3px 6px rgb(138, 144, 189, 0.6), -3px -3px 6px rgb(138, 144, 189, 0.6);}
+    80% {box-shadow: 2px 2px 4px rgb(138, 144, 189, 0.6), -2px -2px 4px rgb(138, 144, 189, 0.6);}
+    90% {box-shadow: 1px 1px 2px rgb(138, 144, 189, 0.6), -1px -1px 2px rgb(138, 144, 189, 0.6);}
+    100% {box-shadow: 0px 0px 0px rgb(138, 144, 189, 0.6);}
+}

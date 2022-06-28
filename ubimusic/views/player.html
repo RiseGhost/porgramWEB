@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/player/style.css">
+    <link rel="stylesheet" href="/css/homepage/background.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <header>
+        <form class="search" action="/player/search" method="GET" id="formulario">
+            <input type="text" name="music" id="pesquisa" placeholder="Search Here">
+            <button type="submit">Search🔍</button>
+        </form>
+    </header>
+
+    <main>
+        <div class='music-container'>
+            <div class='music-player' id='music-player'>
+                <label id="Tittle"></label>
+                <audio id="music" autoplay loop>
+                    <source src="" type="audio/webm" />
+                </audio>
+                <div id="controls">
+                    <progress id="music-progress-bar" value="0" max="100"></progress>
+                    <div class="btn-group" id="btn-group">
+                        <form action="/player/download" method="POST" id="btn-controller">
+                            <button type="button" id='play' onclick="Play()" style="display: none;"><i
+                                    class="material-icons" id="Play-Pause-Icon">play_arrow</i></button>
+                            <button type="button" id="volume"><i class="material-icons"
+                                    id="Volume-Icon">volume_up</i></button>
+                            <input type="range" min="0" max="10" value="10" id="VolumeBar" style="display: none">
+                            <input type="text" id="TittleDownload" name="MusicTittle" style="display: none;">
+                            <button type="submit" id='download'><i class="material-icons">download</i></button>
+                        </form>
+                        <form action="/player/playlist" method="POST" id="btn-playlist">
+                            <button type="submit">PlayList</button>
+                            <input type="text" name="UserName" value="" id="UserName" style="display: none">
+                        </form>
+                    </div>
+                </div>
+                <button onclick="PlayListadd()">Adicionar playlist</button>
+            </div>
+        </div>
+        <div class="Radio">
+            <div id="info">
+                <img src="" id="RadioImg">
+                <label id="RadioName"></label>
+            </div>
+            <div id="controlls">
+                <button onclick="Before()" id="BeforeButton"><i class="material-icons">skip_previous</i></button>
+                <button onclick="PlayPause()" id="PlayPauseButton"><i class="material-icons"
+                        id="Play-PauseIcon">play_arrow</i></button>
+                <button onclick="After()" id="AfterButton"><i class="material-icons">skip_next</i></button>
+            </div>
+        </div>
+        </div>
+
+        <audio style="display: none">
+            <source src="" type="audio/mpeg">
+        </audio>
+    </main>
+</body>
+
+<script src="/Script/RadioWorldAPI.js"></script>
+<script src="/Script/MusicCrontrol.js"></script>
+<script>
+    const cake = document.cookie;
+    var UserName = "";
+    if (cake.search(";") == -1) {
+        UserName = cookie.substring(cake.search("UserName=") + 9, cake.length);
+    } else {
+        UserName = cookie.substring(cake.search("UserName=") + 9, cake.search("playlist") - 2);
+    }
+    console.log(UserName);
+    document.getElementById("UserName").value = UserName;
+    document.getElementById("UserName").innerText = UserName;
+    console.log(document.getElementById("UserName").value)
+
+    var music_names = []
+    var music_img = []
+
+    if (cake.search("playlist_music") != -1) {
+        var list = []
+        console.log(cake.length)
+        console.log(cake.indexOf("playlist_music"))
+        console.log(cake.indexOf("playlist_music") + "playlist_music".length + 1)
+        let str_music_id = decodeURIComponent(cake.substring(cake.indexOf("playlist_music") + "playlist_music".length + 1))
+        while(str_music_id.search(",") != -1){
+            list.push(str_music_id.substring(0, str_music_id.indexOf(",")))
+            str_music_id = str_music_id.substring(12, str_music_id.length)
+        }
+        list.push(str_music_id)
+        for(let i = 0; i < list.length; i++){
+            console.log(list[i])
+            fetch(`https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=150&q=` + list[i] + `&videoEmbeddable=videoEmbeddableUnspecified&key=AIzaSyDbn9jFwiiv5x6EleaEDPEdem-AwsLRdTY`)
+            .then(function (response) {
+                return response.json();
+            }).then(function (data){
+                music_names.push(data.items[0].snippet.title)
+                music_img.push(data.items[0].snippet.thumbnails.high.url)
+            })
+        }
+
+        setTimeout(() => {
+            for(let i = 0; i < list.length; i++){
+                console.log(music_names[i])
+                console.log(music_img[i])
+            }
+        }, 1800);
+    }
+
+</script>
+
+</html>

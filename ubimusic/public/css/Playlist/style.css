@@ -1,0 +1,87 @@
+.PlayList-List{
+    width: 95%;
+    height: 75%;
+    background-color: #36373f;
+    position: absolute;
+    margin-top: 40px;
+}
+
+main .music-container .music-player label {
+    margin-bottom: 340px;
+}
+
+main .music-container .music-player .PlayList-List {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+main .music-container .music-player .PlayList-List div {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+}
+
+main .music-container .music-player .PlayList-List div:hover {
+    background-color: rgb(27, 39, 53);
+}
+
+main .music-container .music-player .PlayList-List form {
+    margin: 15px;
+}
+
+main .music-container .music-player .PlayList-List form input {
+    display: none;
+}
+
+main .music-container .music-player .PlayList-List form button {
+    height: 30px;
+    background-color: rgb(138, 144, 189);
+    color: black;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+main .music-container .music-player .PlayList-List form button:hover {
+    background-color: rgba(138, 144, 189, 0.5);
+}
+
+main .music-container .music-player .PlayList-List div label {
+    border: none;
+    background-color: transparent;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main .music-container .music-player #ADD button {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    margin-top: 150px;
+    margin-left: 330px;
+    border-radius: 100%;
+    border: none;
+    background-color: rgb(60, 81, 235);
+}
+
+main .music-container .music-player #ADD button:hover {
+    background-color: rgb(45, 60, 175);
+    color:white;
+}
+
+.CreatePlaylist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 280px;
+    height: 180px;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
+
+.CreatePlaylist form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

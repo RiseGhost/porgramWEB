@@ -1,0 +1,71 @@
+body{
+    background-color: rgb(27, 39, 53);
+    height: 100vh;
+}
+
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    background-color: rgb(36, 37, 46);
+    margin-top: -10px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#container{
+    margin-top: 50px;
+    height: 100vh;
+}
+
+#list{
+    height: 70%;
+    overflow: scroll;
+    width: 100%;
+    margin-top: 90px;
+}
+
+#divglobal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#divglobal:hover{
+    text-decoration: underline;
+    font-weight: 800;
+}
+
+#divglobal form button{
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    border: none;
+    padding: 3px;
+}
+
+#divglobal form button:hover{
+    background-color: rgba(255, 0, 0, 0.378);
+}
+
+#list_name #divlabel{
+    display: flex;
+    gap: 10px;
+}
+
+#list_name #divlabel #label_username,
+#list_name #divlabel #label_password{
+    color:rgb(138, 144, 189);
+}
+

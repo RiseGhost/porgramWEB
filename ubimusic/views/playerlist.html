@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/player/style.css">
+    <link rel="stylesheet" href="/css/Playlist/style.css">
+    <link rel="stylesheet" href="/css/homepage/background.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="/Script/PlaylistControler.js"></script>
+</head>
+
+<body>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+    <header>
+        <form class="search" action="/player/search" method="GET" id="formulario">
+            <input type="text" name="music" id="pesquisa" placeholder="Search Here">
+            <button type="submit">Search🔍</button>
+        </form>
+    </header>
+
+    <main>
+        <div class='music-container'>
+            <div class='music-player' id='music-player'>
+                <label id="Tittle">PlayList</label>
+                <div class="PlayList-List" id="PlayList-List"></div>
+
+                <div id="ADD"><button onclick="ShowPlayListCreate()"><i class="material-icons">add</i></button></div>
+
+                <div class="CreatePlaylist" style="display: none;">
+                    <form action="/player/playlistcreate" method="POST">
+                        <input type="text" name="PlayListName" id="name" placeholder="Nome da PlayList">
+                        <button type="submit">Criar PlayList</button>
+                        <input type="text" name="UserName" id="Name" style="display: none;">
+                    </form>
+                    <button type="button" onclick="HidePlayListCreate()">Cancelar</button>
+                </div>
+
+            </div>
+        </div>
+            <div class="Radio">
+                <div id="info">
+                    <img src="" id="RadioImg">
+                    <label id="RadioName"></label>
+                </div>
+                <div id="controlls">
+                    <button onclick="Before()" id="BeforeButton"><i class="material-icons">skip_previous</i></button>
+                    <button onclick="PlayPause()" id="PlayPauseButton"><i class="material-icons" id="Play-PauseIcon">play_arrow</i></button>
+                    <button onclick="After()" id="AfterButton"><i class="material-icons">skip_next</i></button>
+                </div>
+            </div>
+        </div>
+
+        <audio style="display: none">
+            <source src="" type="audio/mpeg">
+        </audio>
+
+    </main>
+
+</body>
+<script src="/Script/RadioWorldAPI.js"></script>
+<script>
+    function ShowPlayListCreate(){
+        document.getElementsByClassName("CreatePlaylist")[0].style.display = "flex";
+        const cake = document.cookie;
+        var UserName = cake.substring(cake.search("UserName=") + 9, cake.indexOf(";"));
+        console.log("UserName: " + UserName);
+        document.getElementById("Name").value = UserName;
+    }
+
+    function HidePlayListCreate(){
+        document.getElementsByClassName("CreatePlaylist")[0].style.display = "none";
+    }
+</script>
+<script>
+    setTimeout(() => {
+        const cake = document.cookie;
+        var UserName = cake.substring(cake.search("UserName=") + 9, cake.indexOf(";"));
+        console.log("UserName: " + UserName);
+        document.getElementById("UserName").value = UserName;
+    }, 1500);
+</script>
+</html>

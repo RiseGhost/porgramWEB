@@ -1,0 +1,23 @@
+[0;1;31m●[0m mariadb.service - MariaDB 10.5.15 database server
+     Loaded: loaded (/lib/systemd/system/mariadb.service; enabled; vendor preset: enabled)
+     Active: [0;1;31mfailed[0m (Result: exit-code) since Wed 2022-05-25 04:55:06 WEST; 1min 27s ago
+       Docs: man:mariadbd(8)
+             https://mariadb.com/kb/en/library/systemd/
+    Process: 16164 ExecStartPre=/usr/bin/install -m 755 -o mysql -g root -d /var/run/mysqld (code=exited, status=0/SUCCESS)
+    Process: 16165 ExecStartPre=/bin/sh -c systemctl unset-environment _WSREP_START_POSITION (code=exited, status=0/SUCCESS)
+    Process: 16167 ExecStartPre=/bin/sh -c [ ! -e /usr/bin/galera_recovery ] && VAR= ||   VAR=`cd /usr/bin/..; /usr/bin/galera_recovery`; [ $? -eq 0 ]   && systemctl set-environment _WSREP_START_POSITION=$VAR || exit 1 (code=exited, status=0/SUCCESS)
+    Process: 16220 ExecStart=/usr/sbin/mariadbd $MYSQLD_OPTS $_WSREP_NEW_CLUSTER $_WSREP_START_POSITION [0;1;31m(code=exited, status=2)[0m
+   Main PID: 16220 (code=exited, status=2)
+     Status: "MariaDB server is down"
+        CPU: 1.788s
+
+May 25 04:55:06 raspberrypi mariadbd[16220]: 2022-05-25  4:55:06 0 [Note] InnoDB: File './ibtmp1' size is now 12 MB.
+May 25 04:55:06 raspberrypi mariadbd[16220]: 2022-05-25  4:55:06 0 [Note] InnoDB: 10.5.15 started; log sequence number 45130; transaction id 20
+May 25 04:55:06 raspberrypi mariadbd[16220]: 2022-05-25  4:55:06 0 [Note] Plugin 'FEEDBACK' is disabled.
+May 25 04:55:06 raspberrypi mariadbd[16220]: 2022-05-25  4:55:06 0 [Note] InnoDB: Loading buffer pool(s) from /var/lib/mysql/ib_buffer_pool
+May 25 04:55:06 raspberrypi mariadbd[16220]: 2022-05-25  4:55:06 0 [ERROR] /usr/sbin/mariadbd: unknown option '--bind-address 192.168.0.27'
+May 25 04:55:06 raspberrypi mariadbd[16220]: 2022-05-25  4:55:06 0 [ERROR] Aborting
+May 25 04:55:06 raspberrypi systemd[1]: [0;1;39m[0;1;31m[0;1;39mmariadb.service: Main process exited, code=exited, status=2/INVALIDARGUMENT[0m
+May 25 04:55:06 raspberrypi systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mmariadb.service: Failed with result 'exit-code'.[0m
+May 25 04:55:06 raspberrypi systemd[1]: [0;1;31m[0;1;39m[0;1;31mFailed to start MariaDB 10.5.15 database server.[0m
+May 25 04:55:06 raspberrypi systemd[1]: [0;1;39m[0;1;31m[0;1;39mmariadb.service: Consumed 1.788s CPU time.[0m

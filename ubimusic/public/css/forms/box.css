@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgb(27, 39, 53, 0);
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  height: 500px;
+}
+
+.box {
+  border-radius: 20px;
+  width: 60px;
+  height: 60px;
+  background: #24252e;
+  box-shadow: 0 0 0 rgb(138, 144, 189),
+    0 0 0 rgb(138, 144, 189),
+    10px 10px 10px rgb(138, 144, 189) inset,
+    -10px -10px 10px rgb(138, 144, 189) inset;
+  animation: anime 3s cubic-bezier(0.16, 1, 0.3, 1) 1s;
+  animation-fill-mode: forwards;
+}
+
+.box-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  opacity: 0;
+  animation: show 5s linear;
+  animation-delay: 3000ms;
+  animation-fill-mode: forwards;
+  font-size: 20px;
+  color: rgb(138, 144, 189);
+}
+
+
+@keyframes anime {
+  0% {
+    width: 60px;
+    height: 60px;
+    background: #24252e;
+    box-shadow: 0 0 0 rgb(138, 144, 189),
+      0 0 0 rgb(138, 144, 189),
+      10px 10px 10px rgb(138, 144, 189) inset,
+      -10px -10px 10px rgb(138, 144, 189) inset;
+  }
+
+  25% {
+    width: 60px;
+    height: 60px;
+    background: #24252e;
+    box-shadow: 10px 10px 10px rgb(138, 144, 189),
+      10px 10px 10px rgb(138, 144, 189),
+      0 0 0 rgb(138, 144, 189) inset,
+      0 0 0 rgb(138, 144, 189) inset;
+  }
+
+  50% {
+    width: 60px;
+    height: 500px;
+    background: #24252e;
+    box-shadow: 10px 10px 10px rgb(138, 144, 189),
+      10px 10px 10px rgb(138, 144, 189),
+      0 0 0 rgb(138, 144, 189) inset,
+      0 0 0 rgb(138, 144, 189) inset;
+  }
+
+  100% {
+    width: 480px;
+    height: 500px;
+    background: #24252e;
+    box-shadow: 40px 40px 40px rgb(138, 144, 189),
+      0 0 0 rgb(138, 144, 189),
+      0 0 0 rgb(138, 144, 189) inset,
+      2px 2px 2px rgb(138, 144, 189) inset;
+  }
+}
+
+
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
